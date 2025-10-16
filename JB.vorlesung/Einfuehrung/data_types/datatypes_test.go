@@ -38,9 +38,9 @@ func Example_various_data_types() {
 	s4 := s2[2:7]
 	s5 := s4 + s2
 
-	fmt.Println(s1)
+	fmt.Println(s1) // macht nicht weil es mit nichts verbunden ist
 	fmt.Println(s2)
-	fmt.Println("&c\n", s3)
+	fmt.Printf("%c\n", s3)
 	fmt.Println(s4)
 	fmt.Println(s5)
 
