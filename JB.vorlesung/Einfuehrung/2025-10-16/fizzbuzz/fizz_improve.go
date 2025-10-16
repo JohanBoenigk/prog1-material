@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func FizzImproved(x, y, n int) {
+func FizzImproved(x, y, n int) { // x, y, n ist im Test Programm festgelegt
 	for i := 1; i <= n; i++ { // hier wird von 1 bis n gezählt
 		// wenn i durch x und y teilbar ist, gib "fizzbuzz" aus
 		if i%x == 0 && i%y == 0 {
