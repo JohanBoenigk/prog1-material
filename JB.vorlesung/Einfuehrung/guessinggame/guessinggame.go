@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	//my_number := 42
 	// NumberGood prüft, ob x gleich einer zufällig gewählten Zahl zwischen 1 und 100 ist.
 	// Liefert true, falls x gleich dieser zufallszahl ist ansonsten false.
 	my_number := rand.Intn(100) + 1 //rand.Intn(100) erzeugt eine Zufallszahl von 0 bis 99, mit + 1 verschieben wir den Bereich auf 1 bis 100.

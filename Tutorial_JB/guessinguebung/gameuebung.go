@@ -7,22 +7,27 @@ import (
 
 func main() {
 	my_number := rand.Intn(100) + 1
-	for i := 0; i < 3; i = i + 1 {
-		guess := RReadNumber()
-		if NumberGood(my_number, guess) {
-			fmt.Println("Das war Korrekt!")
+
+	for i := 0; i < 3; i++ {
+		guess := ReadNumber()
+		if NumberGood(guess, my_number) {
+			fmt.Println("Das ist die Richtige Zahl")
 			return
 		}
-		fmt.Printf("%d ist nicht korrekt!\n", guess)
+		fmt.Println("Das ist die falsche Zahl")
 	}
-	fmt.Println("Game Over")
+	fmt.Println("Game Over!")
 }
-func RReadNumber() int {
-	fmt.Print("Rate ein Zahl: ")
+
+func ReadNumber() int {
 	var n int
+
+	fmt.Println("Gib eine beliebige Zahl ein: ")
 	fmt.Scan(&n)
+
 	return n
 }
+
 func NumberGood(x int, n int) bool {
 	return x == n
 }
